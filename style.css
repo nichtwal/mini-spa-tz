@@ -1,0 +1,350 @@
+@font-face {
+  font-family: "Gotham Pro"; /* Название шрифта */
+  src: url("fonts/Gotham Pro/gothampro_black.ttf") format("ttf"); /* Путь к файлу шрифта */
+  src: url("fonts/Gotham Pro/gothampro_blackitalic.ttf") format("ttf");
+  src: url("fonts/Gotham Pro/gothampro_bold.ttf") format("ttf");
+  src: url("fonts/Gotham Pro/gothampro_bolditalic.ttf") format("ttf");
+  src: url("fonts/Gotham Pro/gothampro_italic.ttf") format("ttf");
+  src: url("fonts/Gotham Pro/gothampro_light.ttf") format("ttf");
+  src: url("fonts/Gotham Pro/gothampro_lightitalic.ttf") format("ttf");
+  src: url("fonts/Gotham Pro/gothampro_medium.ttf") format("ttf");
+  src: url("fonts/Gotham Pro/gothampro_mediumitalic.ttf") format("ttf");
+  font-weight: normal; /* Нормальное начертание (300, 400 и т. д.) */
+  font-style: normal; /* Обычный стиль (italic, oblique и т. д.) */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  font-family: "Gotham Pro", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+header {
+  background: #f19d2f;
+  width: 100%;
+  height: 33px;
+}
+
+header p {
+  padding: 10px 13px 11px 14px;
+  color: #2c2b31;
+  text-align: center;
+  font-size: 12.694px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.logo-container {
+  padding: 19px 0;
+  background: #ffd1ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo-container img {
+  width: 218px;
+  height: 31px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.logo-container p {
+  margin-top: 10px;
+  color: #2c2b31;
+  text-align: center;
+  font-size: 13.469px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.slippers-ad {
+  min-height: 281px;
+  background: url("./assets/slippess.png") center center / cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 14px 13px;
+}
+
+.limited-offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 9px 7.101px;
+  border-radius: 7.101px;
+  background: #f19d2f;
+}
+
+.limited-offer p {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10.599px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.limited-offer div {
+  margin-top: 10.14px;
+  color: #fff;
+  font-size: 21.254px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 6.488px 7.019px 5.677px 7.019px;
+  border-radius: 5.677px;
+  background: #37d997;
+}
+
+.discount p:first-child {
+  color: #fff;
+  font-size: 18.077px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  text-decoration-color: #e27500;
+}
+
+.discount p:last-child {
+  margin-top: 8.11px;
+  color: #fff;
+  font-size: 22.301px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.product-section {
+  padding: 16.8px 17px 0;
+}
+
+.type-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.type-description p:first-child {
+  color: #2c2b31;
+  font-size: 12.067px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.type-description p:last-child {
+  color: #37d997;
+  font-size: 12.067px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-color: #37d997;
+}
+
+.slider-container h3 {
+  margin: 20px 0;
+  color: #2c2b31;
+  font-size: 19.168px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.slider-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.slider-gallery {
+  display: flex;
+  justify-content: center;
+  max-height: 66px;
+}
+.slider-gallery img {
+  cursor: pointer;
+  width: 80px;
+  height: 66px;
+  border-radius: 15px;
+  object-fit: contain;
+  margin: 0 6px;
+}
+.slider-gallery img:first-child {
+  margin: 0 6px 0 0;
+}
+.slider-gallery img:last-child {
+  margin: 0 0 0 6px;
+}
+
+.slider-gallery .selected {
+  opacity: 0.4;
+}
+
+.description {
+  margin: 20px 0;
+}
+
+.delivery-info p {
+  color: #000;
+  font-size: 15.29px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.delivery-info span {
+  color: #000;
+  font-size: 15.29px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.rating p {
+  margin-left: 10px;
+  color: #2c2b31;
+  font-size: 15.29px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.types-container {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.color-container,
+.size-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.color-container p,
+.size-container p {
+  color: #2c2b31;
+  text-align: center;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+
+.color-types,
+.size-types {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.selected-color,
+.selected-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14.5px 29.5px;
+  min-width: 170px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.selected-color p,
+.selected-size p {
+  color: #2c2b31;
+  text-align: center;
+  font-size: 21.69px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.color-list,
+.size-list {
+  background: #fff;
+  border-radius: 20px;
+  min-width: 175px;
+  position: absolute;
+  padding: 15px 0 0;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.color-list.open,
+.size-list.open {
+  opacity: 1;
+  z-index: unset;
+}
+
+.color-list p,
+.size-list p {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  margin:0 0 16px;
+}
+
+.buy-button {
+  border-radius: 15px;
+  background: #37d997;
+  min-width: 356px;
+  padding: 11.7px 20px 10.3px 18px;
+  border: none;
+}
+
+.buy-button a {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
